@@ -872,3 +872,22 @@
 //         System.out.println(Arrays.toString(Avg));
 //     }
 // }
+
+public class assign {
+
+    public static void main(String[] args) {
+        int a=6000;
+        int b=0;
+        // int c=a/b;
+        try{
+            int c=a/b;
+            System.out.println("the results is:"+c);
+        }
+        catch(Exception e){
+            System.out.println("we falied to run");
+            System.out.println(e);
+        }
+        System.out.println("the end of the program");
+        
+    }
+}

@@ -873,21 +873,80 @@
 //     }
 // }
 
-public class assign {
+// public class assign {
 
-    public static void main(String[] args) {
-        int a=6000;
-        int b=0;
-        // int c=a/b;
-        try{
-            int c=a/b;
-            System.out.println("the results is:"+c);
-        }
-        catch(Exception e){
-            System.out.println("we falied to run");
-            System.out.println(e);
-        }
-        System.out.println("the end of the program");
+//     public static void main(String[] args) {
+//         int a=6000;
+//         int b=0;
+//         // int c=a/b;
+//         try{
+//             int c=a/b;
+//             System.out.println("the results is:"+c);
+//         }
+//         catch(Exception e){
+//             System.out.println("we falied to run");
+//             System.out.println(e);
+//         }
+//         System.out.println("the end of the program");
         
-    }
-}
+//     }
+// }
+
+
+// public class assign {
+//     public static void main(String[] args) {
+//         int a=10;
+//         int b=0;
+//         if(b==0){
+//             throw new ArithmeticException("divi to 13");
+//         }
+//         else{
+//             System.out.println(a/b);
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// class MyException extends Exception{
+//     @Override
+//     public String toString() {
+//         return "I am toString()";
+//     }
+
+//     @Override
+//     public String getMessage() {
+//         return "I am getMessage()";
+//     }
+// }
+// class MaxAgeException extends Exception{
+//     @Override
+//     public String toString() {
+//         return "Age cannot be greater than 125";
+//     }
+
+//     @Override
+//     public String getMessage() {
+//         return "Make sure that the value of age entered is correct";
+//     }
+// }
+// public class assign{
+//     public static void main(String[] args) {
+//         int a;
+//         Scanner sc = new Scanner(System.in);
+//         a = sc.nextInt();
+//         if (a<9){
+//             try{
+//                 // throw new MyException();
+//                 // throw new ArithmeticException("This is an exception");
+//                 throw new MaxAgeException();
+//             }
+//             catch (Exception e){
+//                 System.out.println(e.getMessage());
+//                 System.out.println(e.toString());
+//                 e.printStackTrace();
+//                 System.out.println("Finished");
+//             }
+//             System.out.println("Yes Finished");
+//         }
+//     }
+// }

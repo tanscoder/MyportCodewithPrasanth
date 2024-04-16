@@ -950,3 +950,132 @@
 //         }
 //     }
 // }
+
+// import harry.f1.Myclass;
+// public class assign {
+
+//     public static void main(String[] args) {
+//         Myclass a=new Myclass();
+//         a.myname("Prasanth");
+        
+//     }
+// }
+
+// class Vechile{
+//     int maxSpeed;
+//     double fuelConsumption;
+//     int numWheels;
+
+//     Vechile(int maxSpeed,double fuelConsumption,int numWheels){
+//         this.maxSpeed = maxSpeed;
+//         this.fuelConsumption = fuelConsumption;
+//         this.numWheels = numWheels;
+//     }
+// }
+// class Car extends Vechile{
+//     String engineType;
+//     String style;
+
+//     Car(int maxSpeed, double fuelConsumption, int numWheels, String engineType, String style) {
+//         super(maxSpeed, fuelConsumption, numWheels);
+//         this.engineType = engineType;
+//         this.style = style;
+//     }
+//     void display(){ 
+//         System.out.println(maxSpeed+" "+fuelConsumption+" "+numWheels+" "+engineType+" "+style);
+//     }
+// }
+// class truck extends Vechile{
+//     double cargoCapacity;
+
+//     truck(int maxSpeed, double fuelConsumption, int numWheels, double cargoCapacity) {
+//         super(maxSpeed, fuelConsumption, numWheels);
+//         this.cargoCapacity = cargoCapacity;
+//     }
+    
+//     void display(){ 
+//         System.out.println(maxSpeed+" "+fuelConsumption+" "+numWheels+" "+cargoCapacity);
+//     }
+// }
+
+// class Motorcycle extends Vechile{
+//     String style;
+//     Motorcycle(int maxSpeed, double fuelConsumption, int numWheels,String style){
+//         super(maxSpeed, fuelConsumption, numWheels);
+//         this.style=style;
+//     }
+    
+//     void display(){ 
+//         System.out.println(maxSpeed+" "+fuelConsumption+" "+numWheels+" "+style);
+//     }
+// }
+
+// class ElectricCar extends Car {
+//     int chargeTime;
+
+//     public ElectricCar(int maxSpeed, double fuelConsumption, int numWheels, String engineType, String style, int chargeTime) {
+//         super(maxSpeed, fuelConsumption, numWheels, engineType, style);
+//         this.chargeTime = chargeTime;
+//     }
+
+    
+//     void display(){ 
+//         System.out.println(maxSpeed+" "+fuelConsumption+" "+numWheels+" "+engineType+" "+style+" "+chargeTime);
+//     }
+// }
+
+// class DieselTruck extends truck {
+//     String emissionStandards;
+
+//     public DieselTruck(int maxSpeed, double fuelConsumption, int numWheels, double cargoCapacity, String emissionStandards) {
+//         super(maxSpeed, fuelConsumption, numWheels, cargoCapacity);
+//         this.emissionStandards = emissionStandards;
+//     }
+    
+//     void display(){ 
+//         System.out.println(maxSpeed+" "+fuelConsumption+" "+numWheels+" "+cargoCapacity+" "+emissionStandards);
+//     }
+// }
+
+// class SportsBike extends Motorcycle {
+//     boolean stuntAbility;
+
+//     public SportsBike(int maxSpeed, double fuelConsumption, int numWheels, String style, boolean stuntAbility) {
+//         super(maxSpeed, fuelConsumption, numWheels, style);
+//         this.stuntAbility = stuntAbility;
+//     }
+    
+//     void display(){ 
+//         System.out.println(maxSpeed+" "+fuelConsumption+" "+numWheels+" "+style+" "+stuntAbility);
+//     }
+// }
+
+
+// public class assign {
+
+//     public static void main(String[] args) {
+        
+//         SportsBike s1=new SportsBike(100, 210303, 2,"sports",true);
+//         s1.display();
+//     }
+// }
+
+// import java.util.Scanner;
+// public class assign {
+
+//     public static void main(String[] args) {
+//         int arr[]={1,2,3,4,5,6,7};
+//         Scanner sc=new Scanner(System.in);
+//         int b=sc.nextInt();
+//         int count=0;
+//         for(int i=0;i<arr.length;i++){
+//             for(int j=i+1;j<arr.length;j++){
+//                 if(arr[i]+arr[j]==b){
+//                     count+=1;
+//                     System.out.println(arr[i]+" "+arr[j]);
+//                 }
+//             }
+//         }
+//         System.out.println(count); 
+//     }
+// }

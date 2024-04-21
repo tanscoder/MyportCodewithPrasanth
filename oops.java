@@ -1070,3 +1070,16 @@
         
 //     }
 // }
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class oops {
+    public static void main(String[] args) throws Exception{
+        String url="";
+        String username="myportseges";
+        String password="0000";
+        Connection con=DriverManager.getConnection(url,username,password);
+        
+    }
+}

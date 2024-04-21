@@ -1061,21 +1061,382 @@
 // }
 
 // import java.util.Scanner;
-// public class assign {
-
+// public class assign{
 //     public static void main(String[] args) {
-//         int arr[]={1,2,3,4,5,6,7};
-//         Scanner sc=new Scanner(System.in);
-//         int b=sc.nextInt();
-//         int count=0;
-//         for(int i=0;i<arr.length;i++){
-//             for(int j=i+1;j<arr.length;j++){
-//                 if(arr[i]+arr[j]==b){
-//                     count+=1;
-//                     System.out.println(arr[i]+" "+arr[j]);
+//         int arr[] = {1, 2, 3, 4, 5, 6, 7};
+//         Scanner sc = new Scanner(System.in);
+//         System.out.print("Enter the target sum: ");
+//         int targetSum = sc.nextInt();
+//         int minDifference = Integer.MAX_VALUE;
+//         int count = 0;
+//         int difference;
+
+//         for (int i = 0; i < arr.length; i++) {
+//             for (int j = i + 1; j < arr.length; j++) {
+//                 if (arr[i] + arr[j] == targetSum) {
+//                     count++;
+//                     difference = Math.abs(arr[i] - arr[j]);
+//                     System.out.println(arr[i] + " " + arr[j]);
+//                     minDifference = Math.min(minDifference, difference);
 //                 }
 //             }
 //         }
-//         System.out.println(count); 
+
+// public class assign{
+//     public static void main(String[] args) {
+//         shape obj=new circle("red", 7);
+//         shape obj1=new rectangle("black", 4, 6);
+//         System.out.println(obj.toString());
+//         System.out.println(obj1.toString());
 //     }
 // }
+
+//         if (count == 0) {
+//             System.out.println("No pairs found with the target sum.");
+//         } else {
+//             System.out.println("Minimum absolute difference: " + minDifference);
+//             System.out.println("Number of pairs with the target sum: " + count);
+//         }
+//         for (int i = 0; i < arr.length; i++) {
+//             for (int j = i + 1; j < arr.length; j++) {
+//                 if (arr[i] + arr[j] == targetSum && Math.abs(arr[i] - arr[j]) == minDifference) {
+//                     System.out.println(arr[i] + " " + arr[j]);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// abstract class Shape{
+//     abstract public double area();
+//     abstract public double perimeter();
+//     String color;
+//     Shape(String color){
+//         this.color=color;
+//     }
+//     abstract String tostring();
+//     public String getcolor(){
+//         return color;
+//     }
+// }
+// class Circle extends Shape{
+//     double radius;
+//     Circle(String color,double radius){
+//         super(color);
+//         this.radius=radius;
+//     }
+//     public double area(){
+//         return Math.PI*radius*radius;
+//     }
+//     public double perimeter(){
+//         return 2*Math.PI*radius;
+//     }
+//     public String tostring(){
+//         return super.getcolor() + area() + perimeter();
+//     }
+// }
+// class rectangles extends Shape{
+//     int length;
+//     int width;
+//     rectangles(String color,int length,int width){
+//         super(color);
+//         this.length=length;
+//         this.width=width;
+//     }
+    
+//     public double area(){
+//         return length*width;
+//     }
+//     public double perimeter(){
+//         return 2*(length+width);
+//     }
+//     public String tostring(){
+//         return super.getcolor() + area() + perimeter();
+//     }
+// }
+// public class assign{
+//     public static void main(String[] args) {
+//         Shape obj=new Circle("red", 7);
+//         Shape obj1=new rectangles("black", 4, 6);
+//          System.out.println(obj.tostring());
+//          System.out.println(obj1.tostring());
+        
+//     }
+// }
+
+// import java.util.Arrays;
+// public class assign {
+//     public static void main(String[] args) {
+//         int arr[]={3,4,5,1,2,342};
+//         int n=arr.length;
+//         for (int i = 0; i < n - 1; i++) {
+//             // Inner loop for comparisons and swaps
+//             for (int j = 0; j < n - i - 1; j++) {
+//                 if (arr[j] > arr[j + 1]) {
+//                     // Swap arr[j] and arr[j+1]
+//                     int temp = arr[j];
+//                     arr[j] = arr[j + 1];
+//                     arr[j + 1] = temp;
+//                 }
+//             }
+//         }
+//         System.out.println(Arrays.toString(arr));
+        
+//     }
+// }
+
+// class task{
+//     int taskid;
+//     String taskname;
+//     String assignto;
+//     String status="pending";
+//     static int nexttaskid=1;
+//     task(String taskname,String assignto,String status){
+//         taskid=nexttaskid;
+//         this.taskname=taskname;
+//         this.assignto=assignto;
+//         this.status=status;
+//         nexttaskid++;
+//     }
+
+//     public void getvalue(){
+//         System.out.println(taskid);
+//         System.out.println(taskname);
+//         System.out.println(assignto);
+//         System.out.println(status);
+//     }
+// }
+// public class assign {
+
+//     public static void main(String[] args) {
+//         task t1=new task("Design","rahul","pending");
+//         task t2=new task("implement Backened","ram","pending");
+//         t1.getvalue();
+//         t2.getvalue();
+        
+//     }
+// }
+
+
+// class Vechile{
+//     String model;
+//     int year;
+//     Vechile(String model,int year){
+//         this.model=model;
+//         this.year=year;
+//     }
+//     void display(){
+//         System.out.println(model);
+//         System.out.println(year);
+//     }
+// }
+// class car extends Vechile{
+//     int seatingcapcity;
+//     car(String model,int year,int seatingcapcity){
+//         super(model,year);
+//         this.seatingcapcity=seatingcapcity;
+//     }
+    
+//     void display(){
+//         System.out.println(model);
+//         System.out.println(year);
+//         System.out.println(seatingcapcity);
+//     }
+
+// }
+// class buses extends Vechile{
+//     int speed;
+//     buses(String model,int year,int speed){
+//         super(model,year);
+//         this.speed=speed;
+//     }
+    
+//     void display(){
+//         System.out.println(model);
+//         System.out.println(year);
+//         System.out.println(speed);
+//     }
+// }
+// class truck extends Vechile{
+//     double cargoCapacity;
+//     truck(String model,int year,double cargoCapacity){
+//         super(model,year);
+//         this.cargoCapacity=cargoCapacity;
+//     }
+    
+//     void display(){
+//         System.out.println(model);
+//         System.out.println(year);
+//         System.out.println(cargoCapacity);
+//     }
+// }
+// public class assign {
+//     public static void main(String[] args) {
+//         car c1=new car("hero",2014,5);
+//         buses b1=new buses("orrff", 2005, 180);
+//         truck t1=new truck("ggfjkjas",2000,1000.0);
+//         c1.display();
+//         b1.display();
+//         t1.display();
+//     }
+// }
+
+
+// import java.util.Scanner;
+// class Product{
+//     private int productId;
+//     private String productName;
+//     private int price;
+//     private int quantity;
+//     public int getProductId(){
+//         return productId;
+//     }
+//     public void setProductId(int Id){
+//         this.productId=Id;
+//     }
+//     public String getproductName(){
+//         return productName;
+//     }
+//     public void setProductName(String name){
+//         this.productName=name;
+//     }
+//     public int getprice(){
+//         return price;
+//     }
+//     public void setprice(int newprice){
+//         this.price=newprice;
+//     }
+//     public int getquantity(){
+//         return quantity;
+//     }
+//     public void setquantity(int newQuantity){
+//         this.quantity=newQuantity;
+//     }
+//     public void updateQuantity(){
+//         System.out.println("product id:" + productId);
+//         System.out.println("product name:" + productName);
+//         System.out.println("price:" + price);
+//         System.out.println("quantity:" + quantity);
+//         System.out.println("enter a integer");
+//         Scanner sc=new Scanner(System.in);
+//         int add=sc.nextInt();
+//         int totalquantity=quantity+add;
+//         System.out.println("quantity:"  + totalquantity);        
+//     }
+
+// }
+// public class assign {
+//     public static void main(String[] args) {
+//         Product p1=new Product();
+//         p1.setProductId(23);
+//         System.out.println(p1.getProductId());
+//         p1.setProductName("laptop");
+//         System.out.println(p1.getproductName());
+//         p1.setprice(5000);
+//         System.out.println(p1.getprice());
+//         p1.setquantity(12);
+//         System.out.println(p1.getquantity());
+//         p1.updateQuantity();        
+//     }
+// }
+// class vehicle{
+//     String model;
+//     int year;
+//     public vehicle(String model,int year){
+//         this.model=model;
+//         this.year=year;
+//     }
+//     public void displayDetails(){
+//         System.out.println(model);
+//         System.out.println(year);
+//     } 
+// }
+
+// public class assign {
+//     public static void main(String[] args) {
+//        try{
+//         int a=8;
+//         int b=0;
+//         double c=a/b;
+//        }
+//        catch(ArithmeticException e){
+//             System.out.println(e);
+//             System.out.println("HAH");
+//        }
+//        catch(IllegalArgumentException e){
+//         System.out.println(e);
+//         System.out.println("Hello");
+//        }
+
+//        finally{
+//         System.out.println("the end of the program");
+//        }
+//     }
+// }
+
+// import java.util.*;
+// public class assign {
+//     public static void main(String[] args) {
+//         boolean flag=true;
+//         int marks[]=new int[3];
+//         marks[0]=1;
+//         marks[1]=23;
+//         marks[2]=34;
+//         int i=0;
+//         int index;
+//         Scanner sc=new Scanner(System.in);
+//         while(true && i<5){
+//             try{
+//                 index=sc.nextInt();
+//                 System.out.println("the index of thr marks"+" "+marks[index]);  
+//                 break; 
+//             }
+//             catch(Exception e){
+//                 System.out.println("invalid index");
+//                 i++;
+//             }
+//         }
+//         if(i>=5){
+//             System.out.println("Error");
+//         }
+//     }
+// }
+
+// class InvalidInputException extends Exception{
+//     public String toString(){
+//         return "cannot add";
+//     }
+//     public String getmessage(){
+//         return "i am get message()";
+//     }
+// }
+// class customercalculator{
+//     double add(int a, int b) throws InvalidInputException{
+//         if(a==9 || b==9){
+//         throw new InvalidInputException();
+//         }
+//         return a+b;
+//     }
+//     double subtract(int a, int b){
+//         return a-b;
+//     }
+//     double mutliple(int a, int b){
+//         return a*b;
+//     }
+//     double division(int a, int b){
+//         if(b==0){
+//             throws Can
+//         }
+//         return a/b;
+//     }
+
+// }
+// public class assign {
+
+//     public static void main(String[] args) throws InvalidInputException {
+//         customercalculator c=new customercalculator();
+//         c.add(8,9);
+//     }
+// }
+
+

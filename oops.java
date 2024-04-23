@@ -1071,15 +1071,108 @@
 //     }
 // }
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+// import java.sql.Connection;
+// import java.sql.DriverManager;
 
-public class oops {
-    public static void main(String[] args) throws Exception{
-        String url="";
-        String username="myportseges";
-        String password="0000";
-        Connection con=DriverManager.getConnection(url,username,password);
+// public class oops {
+//     public static void main(String[] args) throws Exception{
+//         String url="";
+//         String username="myportseges";
+//         String password="0000";
+//         Connection con=DriverManager.getConnection(url,username,password);
         
-    }
-}
+//     }
+// }
+
+
+// interface LabInCharge {
+//     void install();
+//     final String labname="Cse";
+//     int roomNO=119;;
+// }
+// abstract class PhDScholar{
+//     String scholarName;
+//     String labConducted;
+  
+//     public abstract void help();
+  
+//     public String labsAssigned() {
+//       return labConducted;
+//     }
+// }
+
+// class Professor extends PhDScholar implements LabInCharge{
+//     String subject;
+//     String emp_id;
+//     public void install(){
+//         System.out.println("install java");
+//     }
+//     public void teaches() {
+//       System.out.println("Professor teaches " + subject);
+//     }
+//     public void help(){
+//         System.out.println("contact lab assistant");
+//     }
+// }
+  
+// class oops{
+//     public static void main(String[] args) {
+        
+//         Professor p2= new Professor();
+//         p2.scholarName = "Dr. A";
+//         p2.labConducted = "Physics Lab";
+//         p2.subject = "Chemistry";
+//         p2.emp_id = "1234";
+//         System.out.println(p2.labname);
+//         System.out.println(p2.roomNO);
+  
+//       System.out.println("LabInCharge Details");
+//       System.out.println("Scholar Name: " +p2.scholarName);
+  
+//       System.out.println("Professor Details");
+//       System.out.println("Subject: " + p2.subject);
+//       System.out.println("Employee Id: " +p2.emp_id);
+  
+//       System.out.println("PhDScholar Assigned Labs:"+p2.labsAssigned());
+
+//     }
+// }
+
+// import java.util.Scanner;
+// class Blacklog extends Exception{
+//     String getmessage(){
+//         return "you are not allowed for the workshop";
+
+//     }
+// }
+// public class oops {
+//     public static void main(String[] args) throws Blacklog{
+//         Scanner sc=new Scanner(System.in);
+//         Blacklog b1=new Blacklog();
+//         int regno=sc.nextInt();
+//         String workshop;
+//         int noofbalacklog=sc.nextInt();
+//         try{
+//             if(noofbalacklog==0){
+//                 if(regno%2==0){
+//                     workshop="machine learning";
+//                     System.out.println("welcome to workshop :"+workshop);
+//                 }
+//                 else{
+//                     workshop="Blockchain";
+//                     System.out.println("welcome to workshop :"+workshop);
+//                 }
+//             }
+//             else{
+//                 throw new Blacklog();
+//             }
+//         }
+//         catch(Exception e){
+//             System.out.println(b1.getmessage());
+//             System.out.println(e);
+//         }
+        
+//     }
+// }
+
+

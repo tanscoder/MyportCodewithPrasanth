@@ -1,5 +1,4 @@
 package harry;
-
 public class savingsaccount extends Bankaccount implements Accounts {
     public savingsaccount(String customerName, int accountNumber, double balance) {
         super(customerName, accountNumber, "Savings", balance, 0.05);

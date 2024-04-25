@@ -1,5 +1,4 @@
 package harry;
-
 interface Accounts {
     void deposit(double amount);
     void withdraw(double amount);

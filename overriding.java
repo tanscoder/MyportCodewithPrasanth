@@ -23,9 +23,6 @@
 //         A a=new A();
 //         b.ppk();
 //         b.harry();
-//         //b.ppk2();// not allowed
-//     }
-    
-// }
+//         //b.ppkimport java.util.InputMismatchException;
 
 

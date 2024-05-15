@@ -361,6 +361,8 @@ import java.util.*;
 //     }
 // }
 
+import javax.naming.spi.DirStateFactory.Result;
+
 // abstract class Employee extends Person{
 //     String eid;
 //     String desihnation;
@@ -839,14 +841,362 @@ import java.util.*;
 //   }
 
 
+// class EmptyarrayException extends Exception{
+//     public EmptyarrayException(String s){
+//         super(s);
+//     }
+// }
+
+// class NOdupllicateException extends Exception{
+//     public NOdupllicateException(String s){
+//         super(s);
+//     }
+// }
+// public class cat2 {
+//     public static void printDuplicates(int[] arr) throws EmptyarrayException,NOdupllicateException{
+//         if (arr == null || arr.length == 0) {
+//             throw new EmptyarrayException("empty array ");
+//         }
+        
+//         boolean foundDuplicate = false;
+        
+//         for (int i = 0; i < arr.length; i++) {
+//             int count = 0;
+//             for (int j = i + 1; j < arr.length; j++) {
+//                 if (arr[i] == arr[j]) {
+//                     count += 1;
+//                 }
+//             }
+            
+//             if (count > 0) {
+//                 foundDuplicate = true;
+//                 System.out.println("Duplicate element: " + arr[i]);
+//             }
+//         }
+        
+//         if (!foundDuplicate) {
+//             throw new NOdupllicateException("No duplicates found in the array.");
+//         }
+//     }
+    
+//     public static void main(String[] args) {
+//         int[] arr = {1, 2, 3, 3, 4, 5, 5, 6, 6, 7, 8, 9, 2};
+//         try{
+//             printDuplicates(arr);
+//         }
+//         catch(EmptyarrayException e){
+//             System.out.println(e.getMessage());
+//         }
+//         catch(NOdupllicateException e){
+//             System.out.println(e.getMessage());
+//         }
+//     }
+// }
+
+// interface BankingTransaction{
+//     default void processTransaction(double amount) {
+//         System.out.println("Processing transaction of amount: " + amount);
+//     }
+//     static void logTransaction(String message) {
+//         System.out.println("Logging transaction: " + message);
+//     }
+//     double calculateFee(double amount);
+// }
+// class BankingSystem implements BankingTransaction{
+//     public void processTransaction(double amount) {
+//         System.out.println("Processing transaction of amount: " + amount);
+//     }
+//     public double calculateFee(double amount) {
+//         return amount * 0.01;
+//     }
+//     static void logTransaction(String message) {
+//         System.out.println("Logging transaction: " + message);
+//     }
+//     public void makeTransaction(double amount) {
+//         processTransaction(amount);
+//         double fee = calculateFee(amount);
+//         double finalAmount = amount - fee;
+//         logTransaction("Transaction successful! Amount deducted:"+finalAmount);
+//     }
+// }
+// public class cat2{
+//     public static void main(String[] args) {
+//         BankingSystem bank = new BankingSystem();
+//         bank.makeTransaction(1000.0);
+//     }
+// }
+
+// interface Exam{
+//     default int getTotalMarks() {
+//         return 100;
+//     }
+//     static int getPassingMarks() {
+//         return 40;
+//     }
+//     private double calculatePercentage(int obtainedMarks) {
+//         return ((double) obtainedMarks / getTotalMarks()) * 100;
+//     }
+//     void evaluateResult(int obtainedMarks);
+// }
+
+// class TheoryExam implements Exam {
+    
+//     private double calculatePercentage(int obtainedMarks) {
+//         return ((double) obtainedMarks / getTotalMarks()) * 100;
+//     }
+    
+//     static int getPassingMarks() {
+//         return 40;
+//     }
+
+//     @Override
+//     public void evaluateResult(int obtainedMarks) {
+//         double percentage = calculatePercentage(obtainedMarks);
+//         System.out.println("Theory Exam Result:");
+//         System.out.println("Obtained Marks: " + obtainedMarks);
+//         System.out.println("Percentage: " + percentage + "%");
+//         if (obtainedMarks >= getPassingMarks()) {
+//             System.out.println("Passed");
+//         } else {
+//             System.out.println("Failed");
+//         }
+//     }
+// }
+
+// class PracticalExam implements Exam{
+//     private double calculatePercentage(int obtainedMarks) {
+//         return ((double) obtainedMarks / getTotalMarks()) * 100;
+//     }
+//     static int getPassingMarks() {
+//         return 40;
+//     }
+//     @Override
+//     public void evaluateResult(int obtainedMarks) {
+//         double percentage = calculatePercentage(obtainedMarks);
+//         System.out.println("Practical Exam Result:");
+//         System.out.println("Obtained Marks: " + obtainedMarks);
+//         System.out.println("Percentage: " + percentage + "%");
+//         if (obtainedMarks >= getPassingMarks()) {
+//             System.out.println("Passed");
+//         } else {
+//             System.out.println("Failed");
+//         }
+//     }
+// }
+
+// public class cat2{
+//     public static void main(String[] args) {
+//         Exam t1 = new TheoryExam();
+//         Exam p1 = new PracticalExam();
+//         t1.evaluateResult(75);
+//         p1.evaluateResult(35); // Failing marks
+//     }
+// }
+
+// class A{
+//     int age;
+//     public void show(){
+//         System.out.println("this class A show");
+//     }
+//     class B{
+//         public void config(){
+//             System.out.println("this is class B show");
+//         }
+//     }
+// }
+// public class cat2 {
+//     public static void main(String[] args) {
+//         A a=new A();
+//         A.B b=a.new B();
+//         a.show();
+//         b.config();   
+//     }
+// }
 
 
+// class abc implements Cloneable{
+//     int i,j;
+//     public String toString() {
+//         return i + " " + j;
+//     }
+//     public abc clone() throws CloneNotSupportedException{
+//         abc cloned =(abc) super.clone();
+//         cloned.i=this.i;
+//         cloned.j=this.j;
+//         return cloned;
+//     }
+// }
+// public class cat2 {
+//     public static void main(String[] args) throws CloneNotSupportedException{
+//         abc a=new abc();
+//         a.i=5;
+//         a.j=6;
+//         abc b=a.clone();
+//         System.out.println(b);       
+//         System.out.println(a);       
+//     }
+// }
 
 
+// class student implements Cloneable{
+//     String college;
+//     double age;
+//     String name;
+//     public student(String college,double age,String name){
+//         this.college=college;
+//         this.age=age;
+//         this.name=name;
+//     }
+//     public void display(){
+//         System.out.println("name:"+name+" "+"age:"+age+" "+"university:"+college);
+//     }
+//     public Object clone() throws CloneNotSupportedException{
+//         return super.clone();
+//     }
+// }
+
+// public class cat2 {
+//     public static void main(String[] args) throws CloneNotSupportedException{
+//         student s1=new student("VIT-AP", 18,"Prasanth");
+//         s1.display();
+//         student s3=(student) s1.clone();
+//         s3.name="thanu";
+//         s3.display();
+//     }
+// }
+
+// class Address implements Cloneable{
+//     String city;
+//     String pinCode;
+    
+//     public Address(String city, String pinCode) {
+//            this.city = city;
+//            this.pinCode = pinCode;
+//         }
+    
+//     public String getCity() {
+//         return city;
+//     }
+//     public void setCity(String city) {
+//         this.city = city;
+//     }
+//     public String getPinCode() {
+//         return pinCode;
+//     }
+//     public Object clone()throws CloneNotSupportedException{  
+//         return super.clone();  
+//     }
+// }
+
+// class Customer implements Cloneable {
+//         String name;
+//         Address address;
+//          public Customer(String name, Address address) {
+//             this.name = name;
+//             this.address = address;
+//         }
+//     public String getName() {
+//         return name;
+//     }
+//     public Address getAddress() {
+//         return address;
+//     }
+//     public Object clone()throws CloneNotSupportedException{  
+//         return super.clone();  
+//     }  
+// }
+
+// public class cat2{
+//     public static void main(String args[]){
+//         try{  
+//             Customer originalObj = new Customer("Vivek", new Address("Gurgaon", "122001"));   
+//             Customer clonedObj=(Customer)originalObj.clone();  
+//             System.out.println("Original Object properties: ");  
+//             System.out.println(originalObj.getName());  
+//             System.out.println(originalObj.getAddress().getCity());  
+//             System.out.println(originalObj.getAddress().getPinCode());  
+//             System.out.println("Cloned Object properties: ");  
+//             System.out.println(clonedObj.getName());  
+//             System.out.println(clonedObj.getAddress().getCity());  
+//             System.out.println(clonedObj.getAddress().getPinCode());
+//             clonedObj.getAddress().pinCode="12345";
+//             System.out.println("Original Object pincode after changes in cloned object: ");  
+//             System.out.println(originalObj.getAddress().getPinCode()); 
+            
+//         }catch(CloneNotSupportedException c){
+//             System.out.println(e);
+//         }            
+//     }          
+// }
+
+// deep CLoning
 
 
+// class address {
+//     String city;
+//     String pincode;
+//     public address(String city,String pincode){
+//         this.city=city;
+//         this.pincode=pincode;
+//     }
+//     public void display1(){
+//         System.out.println("city: "+city);
+//         System.out.println("pincode: "+pincode);
+//     }
+//     public address(address obj){
+//         this.city= obj.city;
+//         this.pincode= obj.pincode;
+//     }
+// }
+// class employee {
+//     String name;
+//     address obj;
+//     public employee(String name, address obj) {
+//         this.name = name;
+//         this.obj = obj;
+//     }
+//     public void display(){
+//         System.out.println("name: "+name);
+//         obj.display1();
+//     }
+//     public employee (employee obj1){
+//         this.name=obj1.name;
+//         this.obj=new address(obj1.obj);
+//     }
+// }
+// class clone{
+//     public static void main(String[] args) {
+//         address obj2=new address("bhubaneshwar","12345");
+//         employee obj3 =new employee("thanu",obj2);
+//         System.out.println("original data");
+//         obj3.display();
+//         employee obj4=new employee(obj3);
+//         obj4.obj=new address("vijayawada","1234577");
+//         System.out.println("duplicate data");
+//         obj4.display();
+//     }
+// }
 
+// import harry.Faculty1;
+// import java.util.*;
+// public class cat2 implements Cloneable{
+//     public void detailsfaculty(){
+//         Scanner sc=new Scanner(System.in);
+//         int cid=sc.nextInt();
+//         String cname=sc.next();
 
+//         System.out.println("cid:"+cid);
+//         System.out.println("cname:"+cname);
+//     }
+//     public static void main(String[] args) throws CloneNotSupportedException{
+//         cat2 vellorefaculty=new cat2();
+//         Faculty1 f=new Faculty1();
+//         Faculty1 f2=(Faculty1) f.clone();
+//         f2.insert();
+//         f2.details();
+//         vellorefaculty.detailsfaculty();
 
+//     }
+// }
 
 

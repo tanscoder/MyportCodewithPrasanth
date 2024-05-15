@@ -507,3 +507,13 @@
 //     }
 // }
 
+/**
+ * demo
+ */
+public class demo {
+
+    public static void main(String[] args) {
+        int arr[]={1,2,3,3,4};
+        System.out.println(Math.abs(arr[0]));
+    }
+}

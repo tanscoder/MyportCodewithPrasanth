@@ -180,7 +180,7 @@ import java.lang.*;
 //     }
 //     public String[] getnewtork(){ 
 //         System.out.println("Getting list of network");
-//         String[] networklist={"Harry","Prasanth","Anjali5G"};
+//         String[] networklist={"Harrypotter","bigbossPrasanth","pathanjali5G"};
 //         return networklist;
 //     }
 //     public void connnectNetwork(String network){

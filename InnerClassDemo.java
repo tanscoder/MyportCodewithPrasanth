@@ -94,78 +94,78 @@ import java.lang.*;
 // }
 
 
-class Library {
-    static final int MAX_BOOKS = 100;
-    Book[] books;
-    int numBooks;
+// class Library {
+//     static final int MAX_BOOKS = 100;
+//     Book[] books;
+//     int numBooks;
 
-    public Library() {
-        books = new Book[MAX_BOOKS];
-        numBooks = 0;
-    }
+//     public Library() {
+//         books = new Book[MAX_BOOKS];
+//         numBooks = 0;
+//     }
 
-    public void addBook(String title, String author, int publicationYear) {
-        if (numBooks < MAX_BOOKS) {
-            books[numBooks] = new Book(title, author, publicationYear);
-            numBooks++;
-            System.out.println("Book added successfully.");
-        } else {
-            System.out.println("Library is full, cannot add more books.");
-        }
-    }
+//     public void addBook(String title, String author, int publicationYear) {
+//         if (numBooks < MAX_BOOKS) {
+//             books[numBooks] = new Book(title, author, publicationYear);
+//             numBooks++;
+//             System.out.println("Book added successfully.");
+//         } else {
+//             System.out.println("Library is full, cannot add more books.");
+//         }
+//     }
 
-    public void displayBooks() {
-        if (numBooks == 0) {
-            System.out.println("The library is empty.");
-        } else {
-            System.out.println("Books in the library:");
-            for (int i = 0; i < numBooks; i++) {
-                System.out.println(books[i]);
-            }
-        }
-    }
+//     public void displayBooks() {
+//         if (numBooks == 0) {
+//             System.out.println("The library is empty.");
+//         } else {
+//             System.out.println("Books in the library:");
+//             for (int i = 0; i < numBooks; i++) {
+//                 System.out.println(books[i]);
+//             }
+//         }
+//     }
 
-class Book{
-        String title;
-        String author;
-        int publicationYear;
+// class Book{
+//         String title;
+//         String author;
+//         int publicationYear;
 
-        public Book(String title, String author, int publicationYear) {
-            this.title = title;
-            this.author = author;
-            this.publicationYear = publicationYear;
-        }
+//         public Book(String title, String author, int publicationYear) {
+//             this.title = title;
+//             this.author = author;
+//             this.publicationYear = publicationYear;
+//         }
 
-        public String getTitle() {
-            return title;
-        }
+//         public String getTitle() {
+//             return title;
+//         }
 
-        public String getAuthor() {
-            return author;
-        }
+//         public String getAuthor() {
+//             return author;
+//         }
 
-        public int getPublicationYear() {
-            return publicationYear;
-        }
+//         public int getPublicationYear() {
+//             return publicationYear;
+//         }
 
-        @Override
-        public String toString() {
-            return "Title: " + title + ", Author: " + author + ", Publication Year: " + publicationYear;
-        }
-    }
-}
+//         @Override
+//         public String toString() {
+//             return "Title: " + title + ", Author: " + author + ", Publication Year: " + publicationYear;
+//         }
+//     }
+// }
 
-public class InnerClassDemo{
-    public static void main(String[] args) {
-        Library library = new Library();
-        library.addBook("To Kill a Mockingbird", "Harper Lee", 1960);
-        library.addBook("1984", "George Orwell", 1949);
-        library.addBook("The Great Gatsby", "F. Scott Fitzgerald", 1925);
-        Library.Book b=library.new Book("To Kill a Mockingbird", "Harper Lee", 1960);
-        System.out.println(b.getAuthor());
-        library.displayBooks();
-    }
-}
+// public class InnerClassDemo{
+//     public static void main(String[] args) {
+//         Library library = new Library();
+//         library.addBook("To Kill a Mockingbird", "Harper Lee", 1960);
+//         library.addBook("1984", "George Orwell", 1949);
+//         library.addBook("The Great Gatsby", "F. Scott Fitzgerald", 1925);
+//         Library.Book b=library.new Book("To Kill a Mockingbird", "Harper Lee", 1960);
+//         System.out.println(b.getAuthor());
+//         library.displayBooks();
+//     }
+// }
 
 // import harry.check;
 // import harry.CheckEvenException;
@@ -570,4 +570,97 @@ public class InnerClassDemo{
 //         bank.makeTransaction(1000.0);
 //     }
 // }
+
+// class NullpointerException extends Exception{
+//     NullpointerException(String s){
+//         super(s);
+//     }
+// }
+
+// class me{
+//     String a="";
+//     public void check() throws NullpointerException{
+//         if(a.equals("")){
+//             throw new NullpointerException("null pointer String");
+//         }
+//     }
+// }
+
+
+// public class InnerClassDemo {
+
+//     public static void main(String[] args) {
+//         me m1=new me();
+//         try{
+//             m1.check();
+//         }
+//         catch(NullpointerException e){
+//             System.out.println(e);
+//             System.out.println(e.getMessage());
+//         }
+//     }
+// }
+
+// interface Person {
+//     String getName();
+//     int getAge();
+  
+//     void details();
+//     void hobbies();
+//   }
+// interface Employee{
+//     int getEid();
+//     String getDesignation();
+  
+//     void show();
+//   }
+//   class Manager implements Person, Employee {
+//     private String name;
+//     private int age;
+//     private int eid;
+//     private String designation;
+//     public Manager(String name, int age, int eid, String designation) {
+//       this.name = name;
+//       this.age = age;
+//       this.eid = eid;
+//       this.designation = designation;
+//     }
+//     @Override
+//     public String getName() {
+//       return name;
+//     }
+//     @Override
+//     public int getAge() {
+//       return age;
+//     }
+//     @Override
+//     public void details() {
+//       System.out.println("Name: " + name + ", Age: " + age);
+//     }
+//     @Override
+//     public void hobbies() {
+//       System.out.println("Manager hobbies (implementation)");
+//     }
+//     @Override
+//     public int getEid() {
+//       return eid;
+//     }
+//     @Override
+//     public String getDesignation() {
+//       return designation;
+//     }
+//     @Override
+//     public void show() {
+//       System.out.println("Employee ID: " + eid + ", Designation: " + designation);
+//     }
+//   }
+// public class InnerClassDemo {
+//     public static void main(String[] args) {
+//         Manager m1=new Manager("Prasanth", 12, 3234, "CEO");
+//         m1.show();
+//         m1.details();
+//         m1.hobbies();
+//     }
+// }
+
 

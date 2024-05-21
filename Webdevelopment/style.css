@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    font-family: monospace;
+}
+
+header{
+    height:100vh;
+    background-color: #2196f3;
+    color:white;
+}
+header h1{
+    margin:0;
+    text-align: center;
+
+
+}
+button{
+    height: 40px;
+    width: 140px;
+    border-color: red;
+    border-radius:20px;
+    border-style: solid;
+    cursor: pointer;
+    align-items: center;
+}
+.button:hover{
+    color: blue;
+    background-color:rgb(211, 187, 187);
+}
+img{
+    height:10px;
+}

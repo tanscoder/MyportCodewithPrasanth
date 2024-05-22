@@ -1,10 +1,10 @@
 // import java.util.Random;
 // import java.util.Scanner;
 
-// class game1{
-//     public int number;
-//     public int inputNumber;
-//     public int noOfGuesses = 0;
+// class Game {
+//     private int number;
+//     private int inputNumber;
+//     private int noOfGuesses = 0;
 
 //     public int getNoOfGuesses() {
 //         return noOfGuesses;
@@ -14,40 +14,43 @@
 //         this.noOfGuesses = noOfGuesses;
 //     }
 
-//     game1(){
+//     Game() {
 //         Random rand = new Random();
 //         this.number = rand.nextInt(100);
 //     }
-//     void takeUserInput(){
-//         System.out.println("Guess the number");
+
+//     void takeUserInput() {
+//         System.out.println("Guess the number:");
 //         Scanner sc = new Scanner(System.in);
 //         inputNumber = sc.nextInt();
 //     }
-//     boolean isCorrectNumber(){
+
+//     boolean isCorrectNumber() {
 //         noOfGuesses++;
-//         if (inputNumber==number){
-//             System.out.format("Yes you guessed it right, it was %d\nYou guessed it in %d attempts", number, noOfGuesses);
+//         if (inputNumber == number) {
+//             System.out.format("Yes, you guessed it right! It was %d.\nYou guessed it in %d attempts.\n", number, noOfGuesses);
 //             return true;
-//         }
-//         else if(inputNumber<number){
+//         } else if (inputNumber < number) {
 //             System.out.println("Too low...");
-//         }
-//         else if(inputNumber>number){
+//         } else {
 //             System.out.println("Too high...");
 //         }
 //         return false;
 //     }
 // }
-// public class game{
+
+// public class Main {
 //     public static void main(String[] args) {
-//         game1 g = new game1();
-//         boolean b= false;
-//         while(!b){
-//         g.takeUserInput();
-//         b = g.isCorrectNumber();
+//         Game g = new Game();
+//         boolean guessedCorrectly = false;
+
+//         while (!guessedCorrectly) {
+//             g.takeUserInput();
+//             guessedCorrectly = g.isCorrectNumber();
 //         }
 //     }
 // }
+
 
 // public class game{
 
@@ -383,7 +386,7 @@
 //     }
 // }
 
-import java.util.*;
+// import java.util.*;
 // class Inventory {
 //     String products[];
 //     int quantitie[];
@@ -560,3 +563,40 @@ import java.util.*;
 // }
 
 
+// public class Main{
+
+//     public static void main(String[] args) {
+//         try {
+//             String str = "ppk";
+//             checkForVowels(str);
+//             System.out.println("String contains vowels.");
+//         } catch (NoVowelsException e) {
+//             System.out.println(e.getMessage());
+//         }
+//     }
+
+//     public static void checkForVowels(String str) throws NoVowelsException {
+//         boolean hasVowels = false;
+
+//         for (char ch : str.toCharArray()) {
+//             if (isVowel(ch)) {
+//                 hasVowels = true;
+//                 break;
+//             }
+//         }
+
+//         if (!hasVowels) {
+//             throw new NoVowelsException("String does not contain any vowels.");
+//         }
+//     }
+
+//     public static boolean isVowel(char ch) {
+//         return "aeiouAEIOU".indexOf(ch) != -1;
+//     }
+// }
+
+// class NoVowelsException extends Exception {
+//     public NoVowelsException(String message) {
+//         super(message);
+//     }
+// }

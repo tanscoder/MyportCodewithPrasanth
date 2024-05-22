@@ -663,4 +663,37 @@ import java.lang.*;
 //     }
 // }
 
+// class NoVowelsException extends Exception {
+//     public NoVowelsException(String message) {
+//         super(message);
+//     }
+// }
+
+// public class InnerClassDemo{
+
+//     public static void main(String[] args) {
+//         try {
+//             String str = "Prasanth";
+//             checkForVowels(str);
+//             System.out.println("String contains vowels.");
+//         } catch (NoVowelsException e) {
+//             System.out.println(e.getMessage());
+//         }
+//     }
+
+//     public static void checkForVowels(String str) throws NoVowelsException {
+//         int count=0;
+//         for (int i = 0; i < str.length(); i++) {
+//             char c = str.charAt(i);
+//             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+//                 c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
+//                     count+=1;
+//                 break;
+//             }
+//         }
+//         if (count==0) {
+//             throw new NoVowelsException("The string does not contain any vowels.");
+//         }
+//     }
+// }
 

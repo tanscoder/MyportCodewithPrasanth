@@ -7,31 +7,30 @@
 <body>
     <header>
         <h1>Welcome to my Portfolio</h1>
-        <a href=""><button class="button">About</button></a>
-        <a href=""><button class="button">Skills</button></a>
-        <a href=""><button class="button">project</button></a>
-        <a href=""><button class="button">contact</button></a>
-        <a href=""><button class="button">read more</button></a>
+        <br>
+        <br>
+        <br>
+        <div>
+            <a href="#about"><button class="button">About</button></a>
+            <a href="#skills"><button class="button">Skills</button></a>
+            <a href="#My projects"><button class="button">Projects</button></a>
+            <a href="#contact"><button class="button">contact</button></a>
+            <a href="#readmore"><button class="button">read more</button></a>
+        </div>
     </header>
     <main>
         <section id="about">
-            <br>
-            <img src="photo.jpg"height="100px" alt="My image">
-            <br>
-            <br>
-            <audio src="" controls>Here is the music</audio>
-            <br>
-            <video src="" controls height="100px" width="300px">the video</video>
-            <h1>SWAROOP VITB</h1>
+            <img src="photo.jpg" alt="My image">
+            <h1>PRASANTH VITAP</h1>
             <p>I am a passionate web developer with a focus on front-end technologies.
                 <br>
-                I am currently Pursuing my B. Tech in Vishnu Institute of Technology Bhimavaram.
+                I am currently Pursuing my B. Tech in Vellore Institute of Technology Andhrapradesh.
                 <br>
                 I have learnt Web Development from
                 <br>
                 Code With Swaroop.
                 <br>
-                You can Click here to Checkout What I have learnt in HTML CSS JS
+                You can <button class="click">Click here</button> to Checkout What I have learnt in HTML CSS JS
             </p>
 
         </section>
@@ -44,14 +43,16 @@
                 <li>JavaScript Basics</li>
             </ol>
             <iframe src="" frameborder="0"></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/CHpq1tGoSEI?si=x4sdoeIkZsUxDNgp" allowfullscreen></iframe>
-
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CHpq1tGoSEI?si=x4sdoeIkZsUxDNgp"></iframe>
+            <br>
+            <br> 
+            <br>
+            <br>
+             <br>
+            <br>
         </section>
-        <section id="My projects">
-             
-    <h> My Projects</h>
-    <br>
-    <br>
+    <section id="My projects">     
+        <h1> My Projects</h1>
     <table border="1">
         <tr>
             <th>Project</th>
@@ -76,37 +77,47 @@
     <h1>Contact Me</h1>
     <p>feel free to contact me</p>
     <form>
-        <label for="Name"> Name:</label>
-        <input  type="text" id="Name" placeholder="enter name"required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" name="emai" placeholder="enter emai adress" required>
-        <br>
-        <label for="Gender">Choose your Gender:</label>
-        <input type="radio" value="Male">
-        <label for="Male">Male</label>
-        <input type="radio" value="female">
-        <label for="Female">Female</label>
-        <br>
-        <label>Sellect your interest:</label>
-        <input type="checkbox" id="coding" value="coding" >
-        
-        <label for="coding">Coding</label>
-        <input type="checkbox" id="reading" value="reading" >
-        <label for="reading">Reading</label>
-        <br>
-        <label for="Bio">Bio (up to 200 characters)</label>
-        <input type="text" maxlength="2">
-        <br>
-        <a href=""><button>Submit</button></a>
+        <div>
+            <label for="Name"> Name:</label>
+            <input  type="text" id="Name" placeholder="enter name"required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="emai" placeholder="enter emai adress" required>
+        </div>
+        <div>
+            <label for="Gender">Choose your Gender:</label>
+            <input type="radio" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" value="female">
+            <label for="Female">Female</label>
+        </div>
+        <div>
+            <label>Sellect your interest:</label>
+            <input type="checkbox" id="coding" value="coding" >
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="reading" value="reading" >
+            <label for="reading">Reading</label>
+        </div>
+        <div>
+            <label for="Bio">Bio (up to 200 characters):</label>
+            <input type="text" maxlength="200">
+        </div>
+        <a href=""><button class="submit">Submit</button></a>
 
     </form>
 
         </section>
 
     </main>
+
+    <a href="">
+        <button class="fixiedbutton">TOP</button></a>
+    </a>
     <footer>
         <p>@2024 my portfolio</p>
     </footer>
 </body>
 </html>
+

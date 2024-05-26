@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    font-family: monospace;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cYuGNAkpcU1-cgKPPjU8Snimf4Bwq8dfHr_ALm7UWw&s);
+    background-size: cover;
+    background-position: center;
+    font-size: 25px;
+    color:green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cb{
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cb h1{
+    display:flex;
+    justify-content: center;
+    top: 0px;
+}
+.name input{
+    background-color:black;
+    color:white;
+}
+.email input{
+    background-color:black;
+    color:white;
+}
+.bio input{
+    background-color: black;
+    color:white;
+}
+.submit{
+    color:green;
+    border: 1px solid violet;
+    background-color: aqua;
+    cursor: pointer;
+}
+.submit:hover{
+    color:white;
+    background-color: aquamarine; 
+} 

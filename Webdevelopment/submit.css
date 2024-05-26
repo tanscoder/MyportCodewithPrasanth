@@ -1,0 +1,12 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlh5zdtODf4bGk--KDifI1xLDDBZgEJ_XtSF8g-yhyOg&s);
+    background-size: cover;
+}
+.suc p{
+    color:red;
+    text-align: center;
+}
+.bye p{
+    color: red;
+    text-align: center;
+}

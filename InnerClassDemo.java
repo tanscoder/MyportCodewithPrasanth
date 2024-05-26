@@ -697,3 +697,136 @@ import java.lang.*;
 //     }
 // }
 
+// hash map
+// hash set
+// arraylist
+
+
+// class may23 {
+//    public static void main(String[] args) {
+//        ArrayList< String> l1=new ArrayList<>();
+//        l1.add("Thanu");
+//        l1.add("bhav");
+//        l1.add("hello");
+//        System.out.println(l1);
+//        System.out.println("Details");
+//     //    for(String s:l1){
+//     //        System.out.println(s);
+//     //    }
+//     for(int i=0;i<l1.size();i++){
+//         System.out.println(l1.get(i));
+//     }
+//     //    l1.remove("hello");
+//     l1.removeAll(l1);
+//        System.out.println(l1);
+//    }
+// }
+
+
+// public class InnerClassDemo {
+//     public static void main(String[] args) {
+//         HashSet <String> set=new HashSet<>();
+//         set.add("Prasnth");
+//         set.add("thanu");
+//         set.add("subbu");
+//         set.add("subbu");
+//         System.out.println(set);
+//         for(String s:set){
+//             System.out.println(s);
+//         }
+//         HashMap <Integer,String> map=new HashMap<>();
+//         map.put(1, "thanu");
+//         map.put(2, "ppk");
+//         map.put(3, "subbu");
+//         System.out.println(map);
+//         for(Map.Entry m:map.entrySet()){
+//             System.out.println(m.getKey()+" "+m.getValue());
+//         }
+//     }import java.util.*;
+
+import java.util.HashMap;
+class Main {
+public static void main(String[] args) {
+HashMap<String, Integer> hmap = new HashMap<String, Integer>();
+hmap.put("David", 32);
+int value = hmap.
+;
+System.out.println(value);
+}
+}
+
+    
+// }
+
+
+// class A extends Thread{
+//     public void run(){
+//         for(int i=0;i<=10;i++){
+//             System.out.println("HI");
+//             try{
+//                 Thread.sleep(10);
+//             }
+//             catch(Exception e){
+//                 System.out.println(e);
+//             }
+
+//         }
+//     }
+// }
+// class B extends Thread{
+//     public void run(){
+//         for(int i=0;i<=10;i++){
+//             System.out.println("HELLO");
+//             try{
+//                 Thread.sleep(10);
+//             }
+//             catch(Exception e){
+//                 System.out.println(e);
+//             }
+//         }
+//     }
+// }
+// public class InnerClassDemo {
+//     public static void main(String[] args) {
+//         A a=new A();
+//         B b=new B();
+
+//         a.start();
+//         b.start();
+//     }
+// }
+
+// Synchronized
+
+// class A extends Thread{
+//     synchronized void printso(){
+//         System.out.println("HI");
+//         // try{                 
+//         //     Thread.sleep(10);
+//         // }
+//         // catch(Exception e){
+//         //      System.out.println(e);
+//         // }
+//     }
+// }
+// class B extends Thread{
+//     synchronized void printso(){
+//         System.out.println("HELLO");
+//         // try{                 
+//         //     Thread.sleep(10);
+//         // }
+//         // catch(Exception e){
+//         //      System.out.println(e);
+//         // }
+//     }
+// }
+// public class InnerClassDemo {
+//     public static void main(String[] args) {
+//         A a=new A();
+//         B b=new B();
+//         for(int i=0;i<5;i++){
+//             a.printso();
+//             b.printso();
+//         }
+//     }
+// }

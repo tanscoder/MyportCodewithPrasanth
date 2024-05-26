@@ -1,0 +1,63 @@
+body {
+    background-image: url(https://img.freepik.com/free-vector/stream-binary-code-design_53876-100689.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1716508800&semt=ais_user);
+    font-family: monospace;
+    font-size: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.end{
+    width: 500px;
+    height:300px;
+    border: 1px solid yellow;
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+.x{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 0;             
+    right: 0;           
+    margin: 10px;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.x:hover{
+    background-color: red;
+    
+}
+.ok{
+    background-color:green;
+    height:30px;
+    width:50px;
+    cursor: pointer;
+
+}
+.ok:hover{
+    background-color:red;
+    color: white;
+
+}
+.end p{
+        color: black;
+        display:inline-block;
+        animation: blink 0.7s infinite alternate;
+}
+@keyframes blink {
+    from {
+        color: red;
+    }
+    to {
+        color: violet;
+    }
+}

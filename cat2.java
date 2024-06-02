@@ -362,6 +362,7 @@ import java.util.*;
 // }
 
 import javax.naming.spi.DirStateFactory.Result;
+import javax.swing.RowFilter.Entry;
 
 // abstract class Employee extends Person{
 //     String eid;
@@ -1200,3 +1201,79 @@ import java.util.*;
 // }
 
 
+// public class cat2 {
+//     public static void main(String[] args){
+//         ArrayList<String> l1=new ArrayList<>(5);
+//         l1.add("Prasanth");
+//         l1.add("padma");
+//         l1.add("mana");
+//         ArrayList<String> l2=new ArrayList<>();
+//         l2.add("Prasanth");
+//         l2.add("padma");
+//         LinkedList<String>lK=new LinkedList<>();
+//         lK.addAll(l1);
+        // System.out.println(l1);
+        // for(int i=0;i<l1.size();i++){
+        //     System.out.println(l1.get(i));
+        // }
+        // // l1.remove("Prasanth");
+        // l1.removeAll(l2);
+        // System.out.println(l1.contains("Prasanth"));
+        // System.out.println(l1.isEmpty());
+        // l1.set(2,"Srinu");
+        // l1.add(1,"PPK");
+        // l1.clear();
+        // l1.addAll(l2);
+        // System.out.println(l1.containsAll(l2));
+
+        // linked list
+
+        // System.out.println(l1.indexOf("padma"));
+        // System.out.println(lK.getFirst());
+        // lK.offer("shiva");
+        // System.out.println(lK.peek());
+        // System.out.println(lK.peekFirst());
+        // System.out.println(lK.peekLast());
+        // System.out.println(lK);
+        // System.out.println(lK.getLast());
+        // System.out.println(lK);
+        // System.out.println(l1);
+//     }
+// }
+
+// HAsh Map
+
+// public class cat2 {
+//     public static void main(String[] args) {
+//         HashSet<String> h1=new HashSet<>();
+//         h1.add("Prasanth");
+//         h1.add("mana");
+//         h1.add("Srinu");
+//         h1.add("Srinu");
+
+//         System.out.println(h1);
+//     }
+// }
+
+// Hash Map
+
+public class cat2 {
+    public static void main(String[] args) {
+        HashMap<Integer,String> hm=new HashMap<>();
+        HashMap<Integer,String> h2=new HashMap<>();
+        hm.put(1,"Prasanth");
+        hm.put(2,"manswi");
+        System.out.println(hm.containsKey(2));
+        System.out.println(hm.values());
+        h2.putAll(hm);
+        h2.remove(1, "Prasanth");
+        hm.remove(2);
+        hm.replace(1, "Srinu");
+        // System.out.println(hm.get(1));
+        System.out.println(hm);
+        System.out.println(h2);
+    //     for(Map.Entry m:hm.entrySet()){
+    //         System.out.println(m);
+    //     }
+    }
+}

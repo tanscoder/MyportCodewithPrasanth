@@ -1,12 +1,19 @@
 body{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlh5zdtODf4bGk--KDifI1xLDDBZgEJ_XtSF8g-yhyOg&s);
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.aKKzfEX0Z_h-ZXKn2W2NFgHaEH&pid=Api&P=0&h=180);
+    display: block;
     background-size: cover;
+    background-position: center;
 }
-.suc p{
-    color:red;
+.te{
     text-align: center;
+    color: green;
 }
-.bye p{
-    color: red;
+.bg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
     text-align: center;
+    color: green;
+    height: 100vh;
 }

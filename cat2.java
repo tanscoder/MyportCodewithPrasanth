@@ -1257,23 +1257,24 @@ import java.util.*;
 
 // Hash Map
 
-public class cat2 {
-    public static void main(String[] args) {
-        HashMap<Integer,String> hm=new HashMap<>();
-        HashMap<Integer,String> h2=new HashMap<>();
-        hm.put(1,"Prasanth");
-        hm.put(2,"manswi");
-        System.out.println(hm.containsKey(2));
-        System.out.println(hm.values());
-        h2.putAll(hm);
-        h2.remove(1, "Prasanth");
-        hm.remove(2);
-        hm.replace(1, "Srinu");
-        // System.out.println(hm.get(1));
-        System.out.println(hm);
-        System.out.println(h2);
-    //     for(Map.Entry m:hm.entrySet()){
-    //         System.out.println(m);
-    //     }
-    }
-}
+// public class cat2 {
+//     public static void main(String[] args) {
+//         HashMap<Integer,String> hm=new HashMap<>();
+//         HashMap<Integer,String> h2=new HashMap<>();
+//         hm.put(1,"Prasanth");
+//         hm.put(2,"manswi");
+//         System.out.println(hm.containsKey(2));
+//         System.out.println(hm.values());
+//         h2.putAll(hm);
+//         h2.remove(1, "Prasanth");
+//         hm.remove(2);
+//         hm.replace(1, "Srinu");
+//         // System.out.println(hm.get(1));
+//         System.out.println(hm);
+//         System.out.println(h2);
+//     //     for(Map.Entry m:hm.entrySet()){
+//     //         System.out.println(m);
+//     //     }
+//     }
+// }
+

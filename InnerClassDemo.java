@@ -744,18 +744,16 @@ import java.lang.*;
 //         }
 //     }import java.util.*;
 
-import java.util.HashMap;
-class Main {
-public static void main(String[] args) {
-HashMap<String, Integer> hmap = new HashMap<String, Integer>();
-hmap.put("David", 32);
-int value = hmap.
-;
-System.out.println(value);
-}
-}
-
-    
+// import java.util.HashMap;
+// class Main {
+// public static void main(String[] args) {
+// HashMap<String, Integer> hmap = new HashMap<String, Integer>();
+// hmap.put("David", 32);
+// int value = hmap.
+// ;
+// System.out.println(value);
+// }
+// } 
 // }
 
 
@@ -797,7 +795,6 @@ System.out.println(value);
 // }
 
 // Synchronized
-
 // class A extends Thread{
 //     synchronized void printso(){
 //         System.out.println("HI");

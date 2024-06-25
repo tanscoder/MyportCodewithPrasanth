@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1 id="heading">Hello this is my website</h1>
+    <img id="image"src="" alt="image">
+    <br>
+    <script>
+        var a='Hello,world! is my website';
+        const calculateArea = function(x, y) {
+            const area = x * y;
+            return area;
+        };
+
+        console.log(calculateArea(2, 3));
+        function add(a,b){
+            return a+b;
+        }
+        console.log(add(5,5));
+        // conditons
+        // let b=30;
+        // if(b>18){
+        //     console.log("excute");
+        // }
+        // let b=42;
+        // let msg=(b<40)? "you are allowed":"you are not allowed to session";
+        // console.log(msg);
+        // console.log(a);
+        let para=document.createElement("p");
+        document.body.appendChild(para);
+        para.id="new"
+        para.innerHTML="the new line is gerenated";
+        para.style.color="red";
+        let paraToRemove = document.getElementById("new");
+            paraToRemove.parentNode.removeChild(paraToRemove);
+                    // var el=document.getElementById("heading");
+        // var ele=document.getElementById("image");
+        // ele.setAttribute("alt","this my image");
+        // el.innerHTML="Prasanth";
+        // document.write("Python");
+        alert('Hello, world!');
+    </script>
+</body>
+</html>
